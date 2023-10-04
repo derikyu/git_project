@@ -8,24 +8,34 @@
   <head>
     <!-- MUI Icons via Google Web Fonts CDN -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
     <title>Bithub - Login</title>
   </head>
   <body>
 
     <div class="login-wrapper">
-      <form action="" class="form">
+      <form action="login_instructions.php" method="post">
         <h2>Sign in to BitHub</h2>
-        <div class="input-group">
-          <input type="text" name="loginUser" id="loginUser" required />
-          <label for="loginUser">User Name</label>
+        <h2>to continue your journey</h2></br>
+        <div class="form-input">
+          <input type="text" placeholder="Enter Username" name="loginUser" id="loginUser" required />
+          <!-- <label for="loginUser">User Name</label> -->
         </div>
     
-        <div class="input-group">
-            <input type="text" name="userPassword" id="userPassword" required/>
-            <label for="loginPassword">Password</label>
+        <div class="form-input">
+            <i class="fa fa-user icon"></i>
+            <input type="text" placeholder="Enter Password" name="userPassword" id="loginPassword" required/>
+            <!-- <label for="loginPassword">Password</label> -->
         </div>
-        <input type="submit" value="Login" class="submit-btn" />
+        <button type="submit">Login</button>
+        <!-- Button vs input - Unable to add markup to input --><!--<input type="submit" value="Login" class="submit-btn" />-->
+        </br></br>
+        <label>
+            <input type="checkbox" checked="checked" name="rememberMe"> Remember me
+        </label>
+        </br>
+        <span class="passwordForget">Forgot <a href="#">password?</a></span>
+
       </form>
     </div>
   </body>
