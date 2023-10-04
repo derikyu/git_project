@@ -1,8 +1,34 @@
+<!-- Roboto via Google Web Fonts CDN -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap"/>
+
+
 <html>
   <head>
-    <title>HTML Page</title>
+    <!-- MUI Icons via Google Web Fonts CDN -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <title>Bithub - Login</title>
   </head>
   <body>
-    Hello World !!
+
+    <div class="login-wrapper">
+      <form action="" class="form">
+        <h2>Sign in to BitHub</h2>
+        <div class="input-group">
+          <input type="text" name="loginUser" id="loginUser" required />
+          <label for="loginUser">User Name</label>
+        </div>
+    
+        <div class="input-group">
+            <input type="text" name="userPassword" id="userPassword" required/>
+            <label for="loginPassword">Password</label>
+        </div>
+        <input type="submit" value="Login" class="submit-btn" />
+      </form>
+    </div>
   </body>
+
 </html>
+
