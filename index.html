@@ -1,8 +1,46 @@
+<!-- Roboto via Google Web Fonts CDN -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap"/>
+
+
 <html>
   <head>
-    <title>HTML Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- MUI Icons via Google Web Fonts CDN -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <title>Bithub - Login</title>
   </head>
   <body>
-    Hello World !!
+
+    <div class="login-wrapper">
+      <form action="login_action.php" method="post">
+        <h2>Sign in to BitHub</h2>
+        <h3>Bithub is a blockchain-based crowdfunding platform that revolutionises</h3>
+        <h3>the way creators, innovators, and entrepreneurs fund their projects.</h3></br>
+        <div class="form-input">
+            <input type="text" placeholder="Enter Username" name="loginUser" id="loginUser" required />
+            <!-- <label for="loginUser">User Name</label> -->
+        </div>
+    
+        <div class="form-input">
+            <input type="text" placeholder="Enter Password" name="userPassword" id="loginPassword" required/>
+            <!-- <label for="loginPassword">Password</label> -->
+        </div>
+        <button type="submit">Login</button>
+        <!-- Button vs input - Unable to add markup to input --><!--<input type="submit" value="Login" class="submit-btn" />-->
+        </br></br>
+        <label>
+            <input type="checkbox" checked="checked" name="rememberMe"> Remember me
+        </label>
+        </br>
+        <span class="passwordForget">Forgot <a href="#">password?</a></span>
+        </br>
+        <span class="">Already have an account on BitHub?<a href="#"> Sign In </a></span>
+      </form>
+    </div>
   </body>
+
 </html>
+
