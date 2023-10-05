@@ -6,6 +6,7 @@
 
 <html>
   <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- MUI Icons via Google Web Fonts CDN -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
     <link rel="stylesheet" type="text/css" href="style.css"/>
@@ -14,16 +15,16 @@
   <body>
 
     <div class="login-wrapper">
-      <form action="login_instructions.php" method="post">
+      <form action="login_action.php" method="post">
         <h2>Sign in to BitHub</h2>
-        <h2>to continue your journey</h2></br>
+        <h3>Bithub is a blockchain-based crowdfunding platform that revolutionises</h3>
+        <h3>the way creators, innovators, and entrepreneurs fund their projects.</h3></br>
         <div class="form-input">
-          <input type="text" placeholder="Enter Username" name="loginUser" id="loginUser" required />
-          <!-- <label for="loginUser">User Name</label> -->
+            <input type="text" placeholder="Enter Username" name="loginUser" id="loginUser" required />
+            <!-- <label for="loginUser">User Name</label> -->
         </div>
     
         <div class="form-input">
-            <i class="fa fa-user icon"></i>
             <input type="text" placeholder="Enter Password" name="userPassword" id="loginPassword" required/>
             <!-- <label for="loginPassword">Password</label> -->
         </div>
@@ -35,7 +36,8 @@
         </label>
         </br>
         <span class="passwordForget">Forgot <a href="#">password?</a></span>
-
+        </br>
+        <span class="">Already have an account on BitHub?<a href="#"> Sign In </a></span>
       </form>
     </div>
   </body>

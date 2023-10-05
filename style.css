@@ -42,7 +42,7 @@ button:hover {
   /* The "Forgot password" text */
 span.passwordForget {
     float: right;
-    padding-top: 16px;
+    padding-top: 1px;
   }
 
   /* Change styles for span and cancel button on extra small screens */
@@ -57,3 +57,10 @@ span.passwordForget {
     font-family: 'Roboto';font-size: 28px;
     padding: 0 0 0 0;
   }
+
+  .centered_div {
+    position: absolute;
+    left: 50%;
+    right: 50%
+  }
+
